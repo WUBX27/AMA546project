@@ -164,8 +164,6 @@ def model_train(model,train_years, test_years):
     mse, rmse, r2, pred=evaluate_model(model, X_test, y_test)
     return mse, rmse, r2, pred
 
-# Lasso Only
-# --------------------------------------------------
 def load_files(file_list):
     """辅助函数：批量加载文件数据"""
     logvol_minus, logvol_plus = [], []
